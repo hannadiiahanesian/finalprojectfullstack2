@@ -1,0 +1,36 @@
+doctype html
+head
+  title Pokemon
+  script(src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous")
+  script(type='text/javascript' src='javascripts/index.js')
+  link(rel='stylesheet' type='text/css' href='stylesheets/style.css')
+#container.col
+  main
+    h1 My Collection of Pokemon
+    ul#pokemons
+    #inputs
+      form(action='api/pokemons' method='post')
+        label(for='Name')
+          | Name 
+          input(type='text' name='Name')
+          br
+        label(for='Height')
+          | Height 
+          input(type='text' name='Height')
+          br
+        label(for='Weight')
+          | Weight 
+          input(type='text' name='Weight')
+          br
+        label(for='Url')
+          | Url 
+          input(type='text' name='Url')
+          br
+        br
+        br
+        input(type='button' name='Submit' value='submit')
+        br
+        br
+        br
